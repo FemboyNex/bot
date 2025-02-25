@@ -2,9 +2,9 @@ import discord
 import requests
 import random
 import asyncio
+import os
 
-# Discord bot token
-TOKEN = "MTM0Mzc0NDQ1MDg0OTAxMzgxMg.GH_CN5.UoZbUd4-LNccMBCYo7AT4waEhVXfel1lp9wcL8"
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
 # GitHub raw URLs
 WHITELIST_URL = "https://raw.githubusercontent.com/FemboyNex/FemboyNex.github.io/refs/heads/main/id.txt"
